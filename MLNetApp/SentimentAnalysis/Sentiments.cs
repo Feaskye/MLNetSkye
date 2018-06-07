@@ -86,7 +86,7 @@ namespace MLNetApp
             Console.WriteLine();
         }
 
-        static void RunApp()
+       public  static void RunApp()
         {
             var model = Train();
             Evaluate(model);

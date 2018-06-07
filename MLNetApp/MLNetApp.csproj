@@ -14,7 +14,25 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.ML" Version="0.2.0" />
+    <PackageReference Include="Microsoft.ML" Version="0.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="SentimentAnalysis\data\sentiment labelled sentences\.DS_Store">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="SentimentAnalysis\data\sentiment labelled sentences\amazon_cells_labelled.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="SentimentAnalysis\data\sentiment labelled sentences\imdb_labelled.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="SentimentAnalysis\data\sentiment labelled sentences\readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="SentimentAnalysis\data\sentiment labelled sentences\yelp_labelled.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

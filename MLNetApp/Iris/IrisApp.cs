@@ -8,7 +8,8 @@ using System.Text;
 namespace MLNetApp.Iris
 {
    class IrisApp
-    {
+    { //http://www.csharpkit.com/2018-05-09_52160.html
+      //机器学习来预测鸢尾花的类型，比如有setosa、versicolor、virginica三种，基于特征有四种：花瓣长度、花瓣宽度, 萼片长度、萼片宽度。
         static void RunApp()
         {
             // STEP 2: Create a pipeline and load your data
@@ -22,7 +23,7 @@ namespace MLNetApp.Iris
 
             string dataPath = "iris-data.txt";
 
-            //pipeline.Add(new <IrisData>(dataPath, separator: ","));
+            pipeline.Add(new TextLoader<IrisData>(dataPath, separator: ","));
 
 
             // STEP 3: Transform your data
