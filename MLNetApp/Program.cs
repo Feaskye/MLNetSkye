@@ -22,7 +22,7 @@ namespace MLNetApp
 
             string dataPath = "iris-data.txt";
 
-            pipeline.Add(new TextLoader<IrisData>(dataPath, separator: ","));
+            //pipeline.Add(new <IrisData>(dataPath, separator: ","));
 
 
             // STEP 3: Transform your data
